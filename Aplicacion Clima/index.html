@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Finder App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/weather-icons/css/weather-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="./custom.js" defer></script>
+</head>
+<body>
+    <section class="weather-content">
+        <div class="header">
+            <h1>Weather Finder App</h1>
+            <img src="./smartphone.png" alt="Smartphone" class="app-image">
+
+        </div>
+        <!-- Contenedor Principal -->
+        <div class="content-container">
+
+            <!-- Sección del Formulario -->
+            <div class="form-section">
+                <div class="result">
+                    <p>Add city and country</p>
+                </div>
+                <form action="" method="POST" class="get-weather">
+                    <label for="country">Select country:</label>
+                    <select id="country">
+                        <option disabled selected value="">Select the country</option>
+                        <!-- Opciones de países aquí -->
+                    </select>
+
+                    <label for="city">Enter city:</label>
+                    <input type="text" id="city" placeholder="Enter city...">
+
+                    <input type="submit" value="Get Weather">
+                </form>
+            </div>
+
+            <!-- Sección del Mapa -->
+            <div class="map-section">
+                <div id="map" style="height: 400px;"></div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

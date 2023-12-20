@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f9;
+}
+
+.weather-content {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    max-width: 1000px; /* Ajustado para dar espacio al formulario y al mapa */
+    text-align: center;
+    padding: 20px;
+    margin: 5% auto 0;
+    background-color: #a685e2;
+    border-radius: 9px;
+    color: #ffffff;
+    
+}
+
+.weather-content h1, .result h2, .result h5 {
+    color: #ffffff;
+}
+
+.weather-content p, .result p {
+    color: #dcdcf0;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-section {
+    flex: 1;
+    margin-right: 20px; /* Espacio entre el formulario y el mapa */
+    min-width: 250px; /* Tamaño mínimo para la sección del formulario */
+    max-width: 350px; /* Tamaño máximo para la sección del formulario */
+}
+
+.map-section {
+    flex: 1.5;
+    min-width: 400px; /* Tamaño mínimo para la sección del mapa */
+    min-height: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="text"], form input[type="submit"], form select {
+    width: 100%;
+    margin: 0px 0 25px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form input[type="submit"] {
+    background-color: #98ff98;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #89e589;
+}
+
+.alert-message {
+    color: #ff6161;
+}
+
+.wi {
+    color: #800080;
+    font-size: 58px;
+}
+
+#map {
+    width: 100%; /* Ocupa el ancho completo de su contenedor */
+    height: 400px; /* Altura fija */
+    overflow: hidden; /* Oculta el contenido que excede */
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .form-section, .map-section {
+        max-width: none;
+        min-width: 100%;
+    }
+}
+
+.map-and-data-container {
+    display: flex;
+    justify-content: center;
+    align-items: start; /* Asegura que los elementos se alineen en la parte superior */
+    gap: 20px; /* Espacio entre la tarjeta de datos y el mapa */
+}
+
+
+.header {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: start; /* Espacio entre el título y la imagen */
+}
+
+.weather-content h1 {
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding-right: 5px; /* Ocupa el espacio disponible */
+}
+
+.app-image {
+    height: 50px; /* Ajusta el tamaño de la imagen */
+    width: auto; /* Mantiene la proporción de la imagen */
+    
+}
