@@ -22,7 +22,7 @@ To run this application correctly, you need to obtain your own API key from Open
 1. **Clone the Repository**
    ```
    git clone https://github.com/B3njamin-f/Portafolio.git
-   cd https://github.com/B3njamin-f/Portafolio.git
+   cd Portafolio
    ```
 
 2. **API Key Configuration**
