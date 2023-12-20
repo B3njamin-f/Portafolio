@@ -21,8 +21,8 @@ To run this application correctly, you need to obtain your own API key from Open
 
 1. **Clone the Repository**
    ```
-   git clone [REPOSITORY_URL]
-   cd [REPOSITORY_NAME]
+   git clone https://github.com/B3njamin-f/Portafolio.git
+   cd https://github.com/B3njamin-f/Portafolio.git
    ```
 
 2. **API Key Configuration**
